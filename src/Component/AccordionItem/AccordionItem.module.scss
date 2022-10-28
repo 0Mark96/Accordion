@@ -1,0 +1,53 @@
+@import '../../common/variable';
+
+.accordion_item{
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0px;
+    border-bottom: 1px solid $LightGrayishBlue;
+    .question_btn{
+        display: inline-flex;
+        justify-content: space-between;
+        font-family: 'Kumbh Sans';
+        border: none;
+        background-color: transparent;
+        color: $VeryDarkGrayishBlue;
+        .question_title{
+            font-size: 14px;
+            &:hover{
+                color: $SoftRed;
+            }
+        }
+    }
+}
+
+.answer{
+    height: 0;
+    overflow: hidden;
+    padding-right: 20px;
+    color: $DarkGrayishBlue;
+    font-size: 12px;
+}
+
+// toggle
+
+.open_answer{
+   height:auto;
+   padding-top:18px;
+}
+
+.open_question{
+    .question_title{
+        color: $Verydarkdesaturatedblue;
+        font-weight: 700;
+    }
+    .arrow{
+        transform: rotate(180deg);
+    }
+}
+
+@media only screen and (min-width:992px){
+    .answer{
+        padding-right: 60px;
+    }
+}

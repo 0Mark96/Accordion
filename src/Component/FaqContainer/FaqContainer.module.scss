@@ -1,0 +1,26 @@
+@import '../../common/variable';
+
+.faq_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 85%;
+    margin-top:110px;
+    .faq_title{
+        color: $Verydarkdesaturatedblue;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .faq_container{
+        width: 55%;
+        height: 100%;
+        align-items: center;
+        margin: 0;
+        padding: 80px 80px 40px 80px;
+        .faq_title{
+            align-self: flex-start;
+        }
+    }   
+}
