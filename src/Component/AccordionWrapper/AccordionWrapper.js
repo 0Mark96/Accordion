@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import style from './AccordionWrapper.module.scss'
+import { useState } from 'react'
 import AccordionItem from '../AccordionItem/AccordionItem'
 import { faqData } from '../../faqData'
 
