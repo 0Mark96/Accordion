@@ -1,6 +1,6 @@
 import style from './AccordionItem.module.scss'
-import arrow_img from '../../images/icon-arrow-down.svg'
 import classnames from 'classnames'
+import arrow_img from '../../images/icon-arrow-down.svg'
 
 
 const AccordionItem = ({faq,onToggle,active}) => {
